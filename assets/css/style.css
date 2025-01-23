@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.container,
+.container #room-form form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#js-list-all-rooms ul,
+#js-list-available-rooms ul {
+	border: 1px solid gold;
+}
+
+#js-term {
+	border-radius: 8px;
+	padding-inline: 4px;
+}
+
+#js-room-form form {
+	width: 75%;
+	margin-inline: auto;
+}
+
+.dialog {
+	justify-self: center;
+	align-self: center;
+
+	padding: 2rem;
+	border-radius: 8px;
+
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes while-true {
+	0% {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	75% {
+		background-color: rgb(47 34 6 / 50%);
+	}
+}
+
+:root {
+	--bs-border-radius: 4px;
+	--bs-border-radius-lg: 4px;
+}
+
+input,
+select {
+	--bs-border-radius: 2px;
+}
+
+body:has(:popover-open) {
+	overflow: hidden;
+	::backdrop {
+		animation: 2s while-true alternate infinite ease-in-out;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	:not(.container, :popover-open, :popover-open *) {
+		pointer-events: none;
+		user-select: none;
+	}
+
+	:popover-open {
+		position: fixed;
+		inset: 0;
+	}
+
+	:popover-open,
+	:popover-open * {
+		z-index: 1;
+	}
+}
+
+body {
+	background-image: url("../img/hotel.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+
+h1,
+h2 {
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+	background: rgba(0, 0, 0, 0.75);
+	border-radius: 15px;
+	padding: 30px;
+	margin-top: 50px;
+}
+
+.btn-warning {
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+	font-weight: bold;
+
+	&.active {
+		mix-blend-mode: plus-lighter;
+	}
+}
+
+.text-danger {
+	display: inline-block;
+
+	border-radius: 4px;
+
+	color: white !important;
+	background: rgb(250 108 122) !important;
+
+	&:not(:empty) {
+		margin-top: 8px;
+		padding: 2px;
+	}
+}
+
+hr {
+	border-color: white;
+}
+
+.form-control,
+.form-select {
+	background: rgba(255, 255, 255, 0.8);
+	color: black;
+}
+
+.list-group-item {
+	background: #ffc1074f;
+	color: white;
+	border: none;
+}
+
+.alert {
+	font-size: 18px;
+}
+
+.badge {
+	font-size: 18px;
+	span {
+		display: inline-block;
+		padding: 4px;
+		border-radius: 4px;
+	}
+}
