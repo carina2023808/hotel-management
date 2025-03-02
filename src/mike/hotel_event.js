@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { HotelDOM } from "./hotel_dom.js";
 
 // -------------- //

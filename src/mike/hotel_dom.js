@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { HotelReception } from "./hotel_reception.js";
 
 // -------------- //

@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { HotelView } from "./mike/hotel_view.js";
 
 // -------------- //
@@ -10,7 +8,8 @@ class HotelMikarina
 {
 	#view;
 
-	constructor() {
+	constructor()
+	{
 		this.#view = new HotelView();
 
 		/**

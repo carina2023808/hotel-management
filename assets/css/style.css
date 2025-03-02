@@ -17,6 +17,26 @@ body {
 	flex-direction: column;
 }
 
+.logo-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.logo {
+	width: 450px;
+	height: 275px;
+	padding: 15px;
+	border: 8px solid #ffd700;
+	border-radius: 50%;
+	background-color: rgb(0 0 0 / 50%);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .container,
 .container #room-form form {
 	display: flex;
@@ -26,12 +46,12 @@ body {
 
 #js-list-all-rooms ul,
 #js-list-available-rooms ul {
-	border: 1px solid gold;
+	border: 1px solid #ffd700;
 }
 
 #js-term {
-	border-radius: 8px;
 	padding-inline: 4px;
+	border-radius: 8px;
 }
 
 #js-room-form form {
@@ -40,19 +60,17 @@ body {
 }
 
 .dialog {
-	justify-self: center;
-	align-self: center;
-
+	place-self: center center;
 	padding: 2rem;
 	border-radius: 8px;
-
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+	box-shadow: 2px 2px 10px rgb(0 0 0 / 60%);
 }
 
 @keyframes while-true {
 	0% {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgb(0 0 0 / 50%);
 	}
+
 	75% {
 		background-color: rgb(47 34 6 / 50%);
 	}
@@ -70,9 +88,10 @@ select {
 
 body:has(:popover-open) {
 	overflow: hidden;
+
 	::backdrop {
 		animation: 2s while-true alternate infinite ease-in-out;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgb(0 0 0 / 50%);
 	}
 
 	:not(.container, :popover-open, :popover-open *) {
@@ -92,29 +111,29 @@ body:has(:popover-open) {
 }
 
 body {
+	background-attachment: fixed;
 	background-image: url("../img/hotel.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
-	color: white;
+	color: #ffffff;
 }
 
 h1,
 h2 {
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	text-shadow: 2px 2px 5px rgb(255 162 0 / 70%);
 }
 
 .container {
-	background: rgba(0, 0, 0, 0.75);
-	border-radius: 15px;
-	padding: 30px;
 	margin-top: 50px;
+	padding: 30px;
+	border-radius: 15px;
+	background: rgb(0 0 0 / 75%);
 }
 
 .btn-warning {
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-	font-weight: bold;
+	box-shadow: 2px 2px 10px rgb(0 0 0 / 60%);
+	font-weight: 700;
 
 	&.active {
 		mix-blend-mode: plus-lighter;
@@ -123,11 +142,9 @@ h2 {
 
 .text-danger {
 	display: inline-block;
-
 	border-radius: 4px;
-
-	color: white !important;
 	background: rgb(250 108 122) !important;
+	color: #ffffff !important;
 
 	&:not(:empty) {
 		margin-top: 8px;
@@ -136,19 +153,19 @@ h2 {
 }
 
 hr {
-	border-color: white;
+	border-color: #ffffff;
 }
 
 .form-control,
 .form-select {
-	background: rgba(255, 255, 255, 0.8);
-	color: black;
+	background: rgb(255 255 255 / 80%);
+	color: #000000;
 }
 
 .list-group-item {
-	background: #ffc1074f;
-	color: white;
 	border: none;
+	background: #ffc1074f;
+	color: #ffffff;
 }
 
 .alert {
@@ -157,9 +174,16 @@ hr {
 
 .badge {
 	font-size: 18px;
+
 	span {
-		display: inline-block;
 		padding: 4px;
 		border-radius: 4px;
 	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
 }

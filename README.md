@@ -110,5 +110,3 @@ J'ai demandé à `C.` de créer les classes correspondantes aux schémas qu'on a
 connecter les boutons et les formulaires aux JavaScript et de transmettre les
 données aux méthodes de classes qu'à précédemment crée `C.` et d'afficher les
 données que me retournent les méthodes de classes de `C.` dans le DOM.
-
-Je fais une modification.

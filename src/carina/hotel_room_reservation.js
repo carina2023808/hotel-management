@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 class HotelRoomReservation {
 	constructor(roomNumber, personName, nights) {
 		this.roomNumber = roomNumber;

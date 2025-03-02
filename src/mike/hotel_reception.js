@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { Hotel } from "../carina/hotel.js";
 
 // -------------- //

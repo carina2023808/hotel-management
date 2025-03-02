@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { HotelDOMEvent } from "./hotel_event.js";
 
 // -------------- //

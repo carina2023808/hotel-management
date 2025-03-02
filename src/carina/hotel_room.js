@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { HotelRoomReservation } from "./hotel_room_reservation.js";
 
 // -------------- //
